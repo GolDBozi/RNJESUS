@@ -109,6 +109,7 @@ namespace WindowsFormsApplication2
         private void timer1_Tick(object sender, EventArgs e)
         {  
             timer1.Interval = 5000;
+            button7.Visible = true;
             timer2.Start();
             label1.Visible = true;
             timer1.Stop();
@@ -157,7 +158,7 @@ namespace WindowsFormsApplication2
         {//edw ksekinaei h alusida.Mporousa na to kanw k alliws alla protimhsa auto
             timer1.Start();
             button1.Visible = false;
-            button7.Visible = true;
+            
         }
         //edw ftiaxnw koumpi gia na emfanizei ta prohgoumena noumera gia epalhtheush
         private void button2_Click(object sender, EventArgs e)
