@@ -69,28 +69,33 @@ namespace WindowsFormsApplication2
                 timer2.Stop();
                 label6.Visible = true;
                 button6.Visible = true;
-                 }
+                button7.Visible = false;
+                
+            }
             else if ((label2.Visible) == true)
                  {
                 timer3.Stop();
                 label7.Visible = true;
                 button2.Visible = true;
                 button6.Visible = true;
-                  }
+                button7.Visible = false;
+            }
             else if ((label3.Visible) == true)
                  {
                 timer4.Stop();
                 label8.Visible = true;
                 button3.Visible = true;
                 button6.Visible = true;
-                }
+                button7.Visible = false;
+            }
             else if ((label4.Visible) == true)
                 {
                 timer5.Stop();
                 label9.Visible = true;
                 button4.Visible = true;
                 button6.Visible = true;
-                 }
+                button7.Visible = false;
+            }
             else if ((label5.Visible) == true)
                  {
                 label10.Visible = true;
@@ -152,6 +157,7 @@ namespace WindowsFormsApplication2
         {//edw ksekinaei h alusida.Mporousa na to kanw k alliws alla protimhsa auto
             timer1.Start();
             button1.Visible = false;
+            button7.Visible = true;
         }
         //edw ftiaxnw koumpi gia na emfanizei ta prohgoumena noumera gia epalhtheush
         private void button2_Click(object sender, EventArgs e)

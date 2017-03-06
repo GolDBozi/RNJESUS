@@ -5,3 +5,4 @@ C:\Users\GolDBozi\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2
 C:\Users\GolDBozi\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Form1.resources
 C:\Users\GolDBozi\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\WindowsFormsApplication2.Properties.Resources.resources
 C:\Users\GolDBozi\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\RNG.csproj.GenerateResource.Cache
+C:\Users\GolDBozi\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\obj\Debug\RNG.csprojResolveAssemblyReference.cache
