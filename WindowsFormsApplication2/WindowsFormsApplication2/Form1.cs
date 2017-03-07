@@ -8,10 +8,16 @@ using System.Text;
 using System.Windows.Forms;
 //                                      Disclaimer
 
- 
+
 //Den mou aresei katholou etc opws to exw kanei.
 //Einai leitourgiko kai logika kanei auto pou zhtate alla den maresei.
 //Mexri th kuriakh an exw xrono kai empneush tha prospathhsw na to kanw kalutero(programmatistika)
+
+
+//                                      UPDATE 2os tropos
+
+//evala deutero tropo panw se panel pou kanei to programma polu pio aplo kai eukolo(?) 
+//ta noumera trexoun sunexeia kai otan kanoume diplo click stamatane kai emfanizetai to apotelesma
 namespace WindowsFormsApplication2
 {
     public partial class Form1 : Form
@@ -22,6 +28,10 @@ namespace WindowsFormsApplication2
             public int RNG()
 
             {return rnd.Next(0,1000);}
+            //UPDATE
+            //ftiaxnw mia genikh metavlhth X gia na thetw to tuxaio noumero se auth 
+            public int x { get; set; }
+
         }
 
         public Form1()
@@ -32,6 +42,7 @@ namespace WindowsFormsApplication2
         private void Form1_Load(object sender, EventArgs e)
         {//ftiaxnoume to object kai 2 pinakes
             RNJesus a = new RNJesus();
+            RNJesus b = new RNJesus();
             int[] sum = new int[5];
             int[] RNG = new int[5];
             //ftiaxnoume ta 5 random numera kai ta vazoume se pinaka
@@ -58,6 +69,7 @@ namespace WindowsFormsApplication2
             label8.Text = Convert.ToString(sum[2]);
             label9.Text = Convert.ToString(sum[3]);
             label10.Text = Convert.ToString(sum[4]);
+            
         }
 
         private void Form1_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -185,6 +197,64 @@ namespace WindowsFormsApplication2
             label2.Visible = true;
             label3.Visible = true;
             label4.Visible = true;
+        }
+
+        private void timer6_Tick(object sender, EventArgs e)
+        {        //UPDATE
+            
+                //dhmiourgw 5 objects  kai xrhsimopoiw th metavlhth x ths class sto kathe object
+                // kai to emfanizw sta label me to kathe tick pou ginetai
+                Random q = new Random();
+            RNJesus a = new RNJesus();
+            RNJesus b = new RNJesus();
+            RNJesus c = new RNJesus();
+            RNJesus d = new RNJesus();
+            RNJesus f = new RNJesus();
+            a.x = q.Next(0, 1000);
+            b.x = q.Next(0, 1000);
+            c.x = q.Next(0, 1000);
+            d.x = q.Next(0, 1000);
+            f.x = q.Next(0, 1000);
+
+            label11.Text = Convert.ToString(a.x);
+            label13.Text = Convert.ToString(b.x);
+            label15.Text = Convert.ToString(c.x);
+            label17.Text = Convert.ToString(d.x);
+            label19.Text = Convert.ToString(f.x);
+
+            label12.Text = Convert.ToString(a.x);
+            label14.Text = Convert.ToString(b.x);
+            label16.Text = Convert.ToString(c.x);
+            label18.Text = Convert.ToString(d.x);
+            label20.Text = Convert.ToString(f.x);
+
+            // vazw to athroisma se label
+            label21.Text = Convert.ToString(a.x + b.x + c.x + d.x + f.x);
+            
+        }
+
+        private void Form1_MouseClick(object sender, MouseEventArgs e)
+        {
+           
+          
+        }
+
+        private void panel1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {        //UPDATE
+            //emfanizw kai kruvw ta labels
+            timer6.Stop();
+            label12.Visible = true;
+            label14.Visible = true;
+            label16.Visible = true;
+            label18.Visible = true;
+            label20.Visible = true;
+            label11.Visible = false;
+            label13.Visible = false;
+            label15.Visible = false;
+            label17.Visible = false;
+            label19.Visible = false;
+            label21.Visible = true;
+            label22.Visible = true;
         }
     }
 }
